@@ -31,9 +31,11 @@ slidenumbers: true
 
 ---
 
+- Danger and other automation platforms
 - Scripts
 - GitHub Actions and Apps
 - Bots
+- Linters
 
 ---
 
@@ -62,15 +64,6 @@ slidenumbers: true
 ^(it’s not just yourself doing that task 15 minutes a month
 ^(eg: major bugs w/ calendar or answering a question wrong w/ App Submission)
 ^ (closing the milestone and making release notes)
-
----
-
-# Key tools
-
-- Danger and other automation platforms
-- Linters
-- Scripts
-- Bot frameworks
 
 ---
 
@@ -289,12 +282,6 @@ end
 
 ---
 
-# [fit] "Liquid Software"
-
-^ 流れるソフトウェア, continuous deployment の進化版
-
----
-
 # [fit] Speed optimization
 
 ---
@@ -309,21 +296,24 @@ end
 
 ---
 
-# [fit] Bots
+# [fit] Plans
 
 ---
 
-# ProBot does
-
-- [Probot](https://probot.github.io/docs/development/)
-- Automatically marking old branches as stale
-- Reminders
-- Delete merged branch
-- Marking issues to be closed when PR is merged
+- Automated security checking
+- Framework updates w/ release notes
+- Bots
+- Chat ops
 
 ---
 
 # [fit] Conclusion
+
+---
+
+# [fit] "Liquid Software"
+
+^ 流れるソフトウェア, continuous deployment の進化版. What it means for mobile
 
 ---
 
