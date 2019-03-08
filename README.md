@@ -31,6 +31,7 @@ slidenumbers: true
 
 ---
 
+- Scripts
 - GitHub Actions and Apps
 - Bots
 
@@ -41,19 +42,11 @@ slidenumbers: true
 ---
 
 - Fewer mistakes
-- Faster
+- Increase development speed
 - More efficient
 - More exciting
 
-* Goals
-  _ Improve efficiency
-  _ General tenet of economic theory
-  _ “Emotion” and coaching can only get you so far
-  _ Prevent mistakes
-  _ Increase development speed
-  _ Improve stability and reliability
-
-^ App Store Connect にログインするのが好きな人いる？
+^ “Emotion” and coaching can only get you so far. Improve stability and reliability
 
 ---
 
@@ -61,6 +54,7 @@ slidenumbers: true
 
 ---
 
+- Take much time for 1 or more people
 - Take time for _multiple people_
 - High risk
 - Prone to being forgotten
@@ -71,11 +65,12 @@ slidenumbers: true
 
 ---
 
-# Key CI tools
+# Key tools
 
 - Danger and other automation platforms
 - Linters
-- ????
+- Scripts
+- Bot frameworks
 
 ---
 
@@ -121,34 +116,6 @@ swiftlint.lint_files inline_mode: true
 ---
 
 # Original static analysis
-
-^ storyboard の簡易な linter も行える
-本当はツールあるが、とりあえずこれだけでよい
-
----
-
-```rb
-# storyboardにずれているビューや制約の不備がないか
-parsed_diff.each do |changed_file|
-  next unless changed_file.file.match(/.*\.(storyboard)$/)
-
-  changed_file.changed_lines.each do |changed_line|
-    content = changed_line.content
-    has_misplaced_view = content.include? 'misplaced="YES"'
-    has_ambiguous_view = content.include? 'ambiguous="YES"'
-
-    file = changed_file.file
-    line_number = changed_line.number
-
-    if has_misplaced_view
-      fail('ずれているビューがあるので、Update Framesを実行してください', file: file, line: line_number)
-    end
-    if has_ambiguous_view
-      fail('制約が不十分な箇所があるので、直してください', file: file, line: line_number)
-    end
-  end
-end
-```
 
 ---
 
@@ -286,11 +253,27 @@ https_only:
 
 ---
 
-# Automatic dependency updates
+# [fit] Automatic dependency updates
 
 ---
 
-# Deployment
+![100%](images/framework_updates.png)
+
+---
+
+# [fit] Deployment
+
+---
+
+![100%](images/deployment_1.png)
+
+---
+
+![100%](images/deployment_2.png)
+
+---
+
+![100%](images/deployment_3.png)
 
 ---
 
@@ -308,9 +291,7 @@ end
 
 # [fit] "Liquid Software"
 
----
-
-# AKA Continuous Deployment
+^ 流れるソフトウェア, continuous deployment の進化版
 
 ---
 
@@ -318,11 +299,9 @@ end
 
 ---
 
-# Caching
+# [fit] Caching
 
-- https://github.com/blender/Rome
-
-^ CI の時間を半分にした
+^ CI の時間を半分にした. Rome
 
 ---
 
